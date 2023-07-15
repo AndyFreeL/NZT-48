@@ -1,0 +1,57 @@
+//Шрифты=====================
+@import "fonts";
+$fontFamily: "GraphikLCWeb";
+//===========================
+
+//Стили======================
+@import "header";
+@import "title";
+@import "navbar";
+@import "descriprion";
+@import "cards";
+@import "review";
+@import "opinions";
+@import "slider";
+@import "footer";
+//===========================
+
+//Переменные=================
+$minWidth: 320px;
+$mw: 1360;
+$md1: $mw + 12;
+$md2: 1440.98;
+$md3: 1024.98;
+$md4: 768.98px;
+//===========================
+
+//Общие параметры, обнуление=
+@import "null";
+body{
+	background-color: #FDFDFD;
+	color:#1D233F;
+}
+//===========================
+
+//Оболочка===================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	// overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&._loaded {
+	}
+}
+//===========================
+
+//Контейнер==================
+._container {
+	padding: 10px;
+	max-width: $mw + px;
+	margin: 0 auto;
+}
+//===========================
+
+._no-scroll{
+	overflow: hidden;
+}
